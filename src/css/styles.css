@@ -16,3 +16,92 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* Style gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Style form*/
+.feedback-form {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #333;
+}
+
+.feedback-form input[type='email'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+  height: 20px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+  height: 80px;
+}
+
+.feedback-form input[type='email']:focus,
+.feedback-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.feedback-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+  display: block;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
